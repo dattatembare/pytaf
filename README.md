@@ -31,11 +31,17 @@ Python Testing Automation Framework for service endpoint testing automation
     ├───update_auth.py                                      <-- First thing to do before executing any test
     └───README.md                                           <-- This file
 
-# Update config/auth.json - Generate basic authentication key - If not required in your work env then skip this and make code to skip this check.
+# Easy 3 steps method to add automation tests to your endpoint -
+1. Add/update resource config with endpoint details like base url, endpoint method and path
+2. Add test data - it will contain request params, path variables and request body (for POST, PUT, PATCH)
+3. Write tests - Write unittest, access test data using @test_data decorator.
+To run the tests use below steps. 
 
-Authentication details in 'auth.json' is required to run the service endpoint tests on all environments. If this file
-is not available in expected config directory then test execution will be abruptly stopped and throw the error about
-unavailability of file.
+# Before running the tests -
+Update config/auth.json for basic authentication, If authentication not required in your work env then skip this step and make code changes to skip this check.
+
+This authentication is appended in headers of each endpoint request. Authentication details in 'auth.json' is required to run the service endpoint tests on all environments. 
+If this file is not available in expected config directory then test execution will be abruptly stopped and throw the error about unavailability of file.
 
 Run below command from commandline/terminal to update authorization config file.
 
