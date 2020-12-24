@@ -1,0 +1,15 @@
+{
+  "expected_response": {
+    "expected_status": {
+      "status": "UP",
+      "details": {
+        "diskSpace": {
+          "status": "UP"
+        },
+        "mongo": {
+          "status": "UP"
+        }
+      }
+    }
+  }
+}

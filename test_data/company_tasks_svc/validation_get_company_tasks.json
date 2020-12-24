@@ -1,0 +1,39 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "args": {
+    "companyid": "COMPTASKSCREATEVALID"
+  },
+  "params": {
+    "allowDuplicates": true
+  },
+  "json": [
+    {
+      "assignees": [
+        {
+          "advSecGuid": "9028GHF82089DTEST",
+          "ueid": "ueid02"
+        }
+      ],
+      "companyid": "COMPTASKSCREATEVALID",
+      "category": "CAT01",
+      "details": {
+        "lastname": "Pollock",
+        "firstname": "Kyle"
+      },
+      "status": "CREATED",
+      "type": "TYPE01"
+    }
+  ],
+  "expected_response": {
+    "invalid_companyid_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "getCompanyTasks.<cross-parameter>: companyid path variable must match companyid in request body"
+        }
+      ]
+    }
+  }
+}

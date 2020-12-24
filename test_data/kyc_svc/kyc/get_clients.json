@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+    "expected_response": {
+      "expected_content": [
+        {
+          "id": 1,
+          "clientName": "Client ",
+          "dba": "Doing Business As ",
+          "ipAddress": "post-test",
+          "newBusiness": false
+        }
+      ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "sfdc_svc": {
+    "baseurl": "https://sfdc-{environment}-svc.com",
+    "endpoints": {
+      "sfdcversions": {
+        "method": "GET",
+        "path": "/sfdc/test/versions"
+      },
+       "getsfdcdatafeed": {
+         "method": "GET",
+         "path": "/sfdc/test/ECommerce/{companyid}"
+      },
+      "patchsfdcdatafeed": {
+        "method": "PATCH",
+        "path": "/sfdc/ECommerce/{companyid}/update-to-EAO"
+      }
+    }
+  }
+}
+

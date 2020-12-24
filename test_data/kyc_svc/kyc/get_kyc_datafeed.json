@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "json": {
+  },
+    "args": {
+      "id": "3"
+    },
+    "expected_response": {
+      "expected_content": {
+        "id": 3,
+        "clientNumber": 9005000,
+        "clientName": "Lumber Company",
+        "dba": "1234",
+        "ipAddress": "post-3355",
+        "newBusiness": false
+      }
+    }
+}

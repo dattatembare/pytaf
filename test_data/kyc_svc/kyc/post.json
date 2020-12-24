@@ -1,0 +1,22 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "json": {
+    "companyid": "Test Test",
+    "clientNumber": "09004444",
+    "clientName": "My Company",
+    "dba": "1234",
+    "ipAddress": "post-3303",
+    "newBusiness": false
+  },
+  "expected_response": {
+    "expected_content": {
+      "companyid": "Test Test",
+      "clientNumber": 9004444,
+      "clientName": "My Company",
+      "ipAddress": "post-3303",
+      "newBusiness": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "run_tests": [
+    {
+      "module": "test.company_tasks_svc.test_company_tasks_svc"
+    }
+  ]
+}

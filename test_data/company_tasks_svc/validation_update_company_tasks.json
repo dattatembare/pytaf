@@ -1,0 +1,101 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "args": {
+    "companyid": "COMPTASKSCREATEVALID",
+    "ueid": "ueid4tracking"
+  },
+  "params": {
+    "allowDuplicates": true
+  },
+  "json": [
+    {
+      "assignees": [
+        {
+          "advSecGuid": "9028GHF82089DTEST",
+          "ueid": "ueid02"
+        }
+      ],
+      "companyid": "COMPTASKSCREATEVALID",
+      "category": "CAT01",
+      "details": {
+        "lastname": "Pollock",
+        "firstname": "Kyle"
+      },
+      "status": "CREATED",
+      "type": "TYPE01"
+    }
+  ],
+  "expected_response": {
+    "invalid_companyid_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "updateCompanyTasks.<cross-parameter>: companyid path variable must match companyid in request body"
+        }
+      ]
+    },
+    "missing_companyid_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "Task Id and companyid are required for update"
+        }
+      ]
+    },
+    "invalid_id_response": {
+      "errors": [
+        {
+          "code": "404",
+          "description": "Task not found for Id: INVALID-ID"
+        }
+      ]
+    },
+    "empty_assignees_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "All assignees must have either Ueid or Advanced Security Guid defined"
+        }
+      ]
+    },
+    "invalid_status_response": {
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize value of type `com.pytaf.companytasks.model.TaskStatus` from String \"DONE\": value not one of declared Enum instance names: [CREATED, COMPLETED, IN_PROGRESS]"
+    },
+    "id_of_other_companyid_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "companyid cannot be updated"
+        }
+      ]
+    },
+    "update_companyid_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "companyid cannot be updated"
+        }
+      ]
+    },
+    "update_category_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "Category cannot be updated"
+        }
+      ]
+    },
+    "update_type_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "Type cannot be updated"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "suites": [
+    "company_task/company_task_resource_config.json",
+    "kyc/kyc_resource_config.json",
+    "sfdc/sfdc_config.json"
+  ]
+}

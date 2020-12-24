@@ -1,0 +1,33 @@
+{
+  "company_tasks_svc": {
+    "dev_baseurl": "http://companytasks-dev.com",
+    "baseurl": "https://companytasks-svc.{environment}.com",
+    "local_baseurl": "http://companytasks-local.com",
+    "endpoints": {
+      "health": {
+        "method": "GET",
+        "path": "/manage/health"
+      },
+      "createCompanyTasks": {
+        "method": "POST",
+        "path": "/api/company-tasks/v1/companies/{companyid}?ueid={ueid}"
+      },
+      "deleteCompanyTasks": {
+        "method": "DELETE",
+        "path": "/api/company-tasks/v1/companies/{companyid}"
+      },
+      "updateCompanyTasks": {
+        "method": "PUT",
+        "path": "/api/company-tasks/v1/companies/{companyid}?ueid={ueid}"
+      },
+      "countCompanyTasks": {
+        "method": "POST",
+        "path": "/api/company-tasks/v1/companies/{companyid}/count"
+      },
+      "getCompanyTasks": {
+        "method": "POST",
+        "path": "/api/company-tasks/v1/companies/{companyid}/search"
+      }
+    }
+  }
+}

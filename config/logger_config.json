@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "standard": {
+      "format": "[%(asctime)s] [%(levelname)s] [%(filename)s %(funcName)s():%(lineno)s] %(message)s"
+    },
+    "custom": {
+      "format": "%(asctime)s %(levelname)s: %(message)s",
+      "datefmt": "%Y%m%d %T"
+    }
+  },
+  "handlers": {
+    "default": {
+      "level": "TRACE",
+      "formatter": "standard",
+      "class": "logging.StreamHandler"
+    },
+    "detailed_file_handler": {
+      "level": "TRACE",
+      "filename": "pytaf.log",
+      "class": "logging.handlers.TimedRotatingFileHandler",
+      "formatter": "standard",
+      "when": "d",
+      "interval": 1,
+      "backupCount": 0
+    }
+  },
+  "loggers": {
+    "": {
+      "handlers": [
+        "default",
+        "detailed_file_handler"
+      ],
+      "level": "INFO",
+      "propagate": "True"
+    }
+  }
+}

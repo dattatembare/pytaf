@@ -1,0 +1,20 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "json": {
+  },
+  "dev": {
+    "args": {
+      "companyid": "00H2A1IUKCASW4SEK5SR"
+    },
+    "expected_response": {
+      "expected_content": {
+        "Id": "aDH2h000000akB1GAI",
+        "OwnerId": "0052h000001Cvh1AAC",
+        "IsDeleted": false,
+        "Name": "E-00000025"
+      }
+    }
+  }
+}

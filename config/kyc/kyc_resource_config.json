@@ -1,0 +1,19 @@
+{
+  "kyc_svc": {
+    "baseurl": "https://kyc-{environment}-svc.com",
+    "endpoints": {
+      "getkycclient": {
+        "method": "GET",
+        "path": "/kyc/test/{id}"
+      },
+      "getkycclients": {
+        "method": "GET",
+        "path": "/kyc/test"
+      },
+      "addskyc": {
+        "method": "POST",
+        "path": "/kyc/test"
+      }
+    }
+  }
+}

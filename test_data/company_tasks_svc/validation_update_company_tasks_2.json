@@ -1,0 +1,31 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "args": {
+    "companyid": "SCENARIO4companyid",
+    "ueid": "ueid4tracking"
+  },
+  "params": {
+    "allowDuplicates": true
+  },
+  "json": [
+    {
+      "assignees": [
+        {
+          "advSecGuid": "9028GHF82089DTEST",
+          "ueid": "ueid02"
+        }
+      ],
+      "companyid": "SCENARIO4companyid",
+      "category": "CAT01",
+      "details": {
+        "lastname": "Pollock",
+        "firstname": "Kyle"
+      },
+      "status": "CREATED",
+      "type": "TYPE01"
+    }
+  ]
+}
+

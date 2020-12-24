@@ -1,0 +1,77 @@
+{
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "args": {
+    "companyid": "COMPTASKSCREATEVALID",
+    "ueid": "ueid4tracking"
+  },
+  "params": {
+    "allowDuplicates": true
+  },
+  "json": [
+    {
+      "assignees": [
+        {
+          "advSecGuid": "9028GHF82089DTEST",
+          "ueid": "ueid02"
+        }
+      ],
+      "companyid": "COMPTASKSCREATEVALID",
+      "category": "CAT01",
+      "details": {
+        "lastname": "Pollock",
+        "firstname": "Kyle"
+      },
+      "status": "CREATED",
+      "type": "TYPE01"
+    }
+  ],
+  "expected_response": {
+    "invalid_companyid_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "createCompanyTasks.<cross-parameter>: companyid path variable must match companyid in request body"
+        }
+      ]
+    },
+    "missing_required_field_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "Tasks must include companyid, Category, Type, and at least one Assignee"
+        }
+      ]
+    },
+    "empty_assignees_response": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "All assignees must have either Ueid or Advanced Security Guid defined"
+        }
+      ]
+    },
+    "id_present_in_input": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "New Tasks must not already have an Id"
+        }
+      ]
+    },
+    "invalid_status_response": {
+      "status": 400,
+      "error": "Bad Request",
+      "message": "JSON parse error: Cannot deserialize value of type `com.pytaf.companytasks.model.TaskStatus` from String \"DONE\": value not one of declared Enum instance names: [CREATED, COMPLETED, IN_PROGRESS]"
+    },
+    "duplicate_not_allowed": {
+      "errors": [
+        {
+          "code": "400",
+          "description": "Task is a duplicate by companyid, category, and type of existing task with ID: "
+        }
+      ]
+    }
+  }
+}

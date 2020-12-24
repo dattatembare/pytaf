@@ -1,0 +1,114 @@
+{
+  "client_records": [
+    {
+      "args": {
+        "companyid": "companyid_001",
+        "ueid": "UEID_001"
+      }
+    },
+    {
+      "args": {
+        "companyid": "companyid_002",
+        "ueid": "UEID_002",
+        "assignees": [
+          {
+            "advSecGuid": "GUID_PLACEHOLDER"
+          }
+        ]
+      }
+    }
+  ],
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "json": [
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "type": "FIRST_STEPS",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {}
+    },
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "type": "COMPANY_DETAILS",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {
+        "subcategory": "BUSINESS_INFO"
+      }
+    },
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "type": "CONTACT_INFORMATION",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {
+        "subcategory": "BUSINESS_INFO"
+      }
+    },
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "type": "BANKING_INFORMATION",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {}
+    },
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {}
+    },
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "type": "ADD_EMPLOYEE",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {}
+    },
+    {
+      "companyid": "companyid_PLACEHOLDER",
+      "category": "ONBOARDING",
+      "type": "SUBMIT",
+      "status": "CREATED",
+      "assignees": [
+        {
+          "ueid": "UEID_PLACEHOLDER"
+        }
+      ],
+      "details": {}
+    }
+  ]
+}
+

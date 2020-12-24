@@ -1,0 +1,89 @@
+{
+  "endpoint_inputs": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "args": {
+      "companyid": "COMPTASKSCREATEVALID",
+      "ueid": "ueid4tracking"
+    },
+    "json": [
+      {
+        "assignees": [
+          {
+            "advSecGuid": "9028GHF82089DTEST"
+          }
+        ],
+        "companyid": "COMPTASKSCREATEVALID",
+        "category": "CAT01",
+        "details": {
+          "lastname": "Pollock",
+          "firstname": "Kyle"
+        },
+        "status": "CREATED",
+        "type": "TYPE01"
+      },
+      {
+        "assignees": [
+          {
+            "ueid": "ueid02"
+          }
+        ],
+        "companyid": "COMPTASKSCREATEVALID",
+        "category": "CAT02",
+        "details": {
+          "lastname": "Venuti",
+          "firstname": "Jack"
+        },
+        "status": "CREATED",
+        "type": "TYPE02"
+      }
+    ]
+  },
+  "expected_response": {
+    "expect_this": {
+      "result": "the Spanish inquisition"
+    }
+  },
+  "dev": {
+    "endpoint_inputs": {
+      "args": {
+        "companyid": "DEVCOMPTASKSCREATEVALID"
+      },
+      "json": [
+        {
+        "companyid": "DEVCOMPTASKSCREATEVALID",
+        "category": "CAT01",
+        "details": {
+          "lastname": "Pollock",
+          "firstname": "Kyle"
+        },
+        "status": "CREATED",
+        "type": "TYPE01",
+        "assignees": [
+          {
+            "advSecGuid": "9028GHF82089DTEST",
+            "ueid": "ueid01"
+          }
+        ]
+        },
+        {
+        "companyid": "DEVCOMPTASKSCREATEVALID",
+        "category": "CAT02",
+        "details": {
+          "lastname": "Venuti",
+          "firstname": "Jack"
+        },
+        "status": "CREATED",
+        "type": "TYPE02",
+        "assignees": [
+          {
+            "advSecGuid": "9028GHF82089ETEST",
+            "ueid": "ueid02"
+          }
+        ]
+      }
+    ]
+    }
+  }
+}

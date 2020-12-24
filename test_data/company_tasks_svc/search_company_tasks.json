@@ -1,0 +1,290 @@
+{
+  "endpoint_inputs": {
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "args": {
+      "companyid": "SEARCHTESTC1",
+      "ueid": "ueid4tracking"
+    },
+    "params": {
+	  "allowDuplicates": true
+	},
+    "json": [{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "add_employees",
+	"status": "COMPLETED",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089FTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "add_employees",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089FTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "outboarding",
+	"type": "add_employees",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"ueid": "u2"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "outboarding",
+	"type": "add_employees",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"ueid": "u4"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "bank_info",
+	"status": "COMPLETED",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089FTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "bank_info",
+	"status": "COMPLETED",
+	"assignees": [{
+		"ueid": "u7"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "bank_info",
+	"status": "CREATED",
+	"assignees": [{
+		"ueid": "u8"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "bank_info",
+	"status": "CREATED",
+	"assignees": [{
+		"ueid": "u9"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "bank_info",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089FTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "bank_info",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"ueid": "u7"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "business_info",
+	"status": "CREATED",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089ATEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "business_info",
+	"status": "CREATED",
+	"assignees": [{
+		"ueid": "u2"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "business_info",
+	"status": "CREATED",
+	"assignees": [{
+		"ueid": "u9"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "business_info",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089FTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "contact_info",
+	"status": "COMPLETED",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089ATEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "contact_info",
+	"status": "COMPLETED",
+	"assignees": [{
+		"ueid": "u10"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "contact_info",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089BTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "contact_info",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"ueid": "u4"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "contact_info",
+	"status": "IN_PROGRESS",
+	"assignees": [{
+		"ueid": "u9"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "first_steps",
+	"status": "COMPLETED",
+	"assignees": [{
+		"ueid": "u10"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "first_steps",
+	"status": "COMPLETED",
+	"assignees": [{
+		"ueid": "u2"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "first_steps",
+	"status": "CREATED",
+	"assignees": [{
+		"advSecGuid": "9028GHF82089BTEST"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+},
+{
+	"companyid": "SEARCHTESTC1",
+	"category": "onboarding",
+	"type": "first_steps",
+	"status": "CREATED",
+	"assignees": [{
+		"ueid": "u5"
+	}],
+	"details": {
+           "dkey": "dvalue"
+         }
+}]
+}
+}
